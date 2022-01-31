@@ -1,0 +1,700 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://minigames/pw_crck/scripts/Phone.gd" type="Script" id=1]
+[ext_resource path="res://minigames/pw_crck/assets/Celula.png" type="Texture" id=2]
+[ext_resource path="res://minigames/pw_crck/scenes/Butao.tscn" type="PackedScene" id=4]
+
+[sub_resource type="Animation" id=22]
+resource_name = "Crack"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0.866667 ), Color( 0.14902, 1, 0, 0.403922 ), Color( 0, 0, 0, 0.866667 ) ]
+}
+
+[sub_resource type="Animation" id=23]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0.866667 ) ]
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "Almost"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.756863, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Right"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.00784314, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Wrong"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Almost"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.756863, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "Right"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.00784314, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "Wrong"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "Almost"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.756863, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "Right"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.00784314, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "Wrong"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "Almost"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.756863, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "Right"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.00784314, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_name = "Wrong"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 0, 0, 1 ) ]
+}
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.462745, 0.0666667, 0.0666667, 1 )
+border_color = Color( 1, 1, 1, 1 )
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0, 0.196078, 0.262745, 1 )
+border_color = Color( 1, 1, 1, 1 )
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 1.75, 15.75 )
+
+[node name="Phone" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 385.0, 354.0 ],
+"_edit_vertical_guides_": [ 160.0 ]
+}
+Butao = ExtResource( 4 )
+
+[node name="Sprite" type="ColorRect" parent="."]
+margin_right = 320.0
+margin_bottom = 480.0
+rect_pivot_offset = Vector2( 82, 205 )
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HackerText" type="Node2D" parent="."]
+
+[node name="HackerTyper" type="Label" parent="HackerText"]
+margin_left = 35.0
+margin_top = 60.0
+margin_right = 284.0
+margin_bottom = 9569.0
+custom_colors/font_color = Color( 0.101961, 1, 0, 1 )
+text = "extends Node2D
+
+onready var Time = get_node(\"Time\")
+onready var Progress = get_node(\"Progress\")
+
+var timer
+var num_crack = [0, 0, 0, 0]
+
+signal crack
+
+# reseta o timer e limpa os botoes
+func _ready():
+	randomize()
+
+	for i in 4:
+		num_crack[i] = randi() % 10
+
+	print(num_crack)
+
+	timer = 60
+
+	var hacker_anim = get_node(\"HackerText/HackerAnim\")
+	hacker_anim.interpolate_property($HackerText, \"position:y\", 520, -2000, 20, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT) 
+	hacker_anim.start()
+
+
+# sempre que o tempo acabar, tire 1 de timer
+func _on_Time_timeout():
+	timer -= 1
+	Progress.value = timer
+	
+	if timer <= 0:
+		Time.stop()
+		# depois mudar 
+		get_tree().paused
+
+
+onready var Num:Array = [
+	get_node(\"HBoxContainer/Num1\"),
+	get_node(\"HBoxContainer/Num2\"),
+	get_node(\"HBoxContainer/Num3\"),
+	get_node(\"HBoxContainer/Num4\")
+	]
+
+var num = [0, 0, 0, 0]
+var rig = [false, false, false, false]
+
+func _on_Num1_pressed():
+	num[0] += 1
+	if num[0] == 10:
+		num[0] = 0
+	Num[0].text = \"  \"+ String(num[0]) +\"  \"
+
+
+func _on_Num2_pressed():
+	num[1] += 1
+	if num[1] == 10:
+		num[1] = 0
+	Num[1].text =\"  \"+ String(num[1]) +\"  \"
+
+func _on_Num3_pressed():
+	num[2] += 1
+	if num[2] == 10:
+		num[2] = 0
+	Num[2].text =\"  \"+ String(num[2]) +\"  \"
+
+func _on_Num4_pressed():
+	num[3] += 1
+	if num[3] == 10:
+		num[3] = 0
+	Num[3].text =\"  \"+ String(num[3]) +\"  \"
+
+func _reset():
+	Num[0].text = \"0\"
+	Num[1].text = \"0\"
+	Num[2].text = \"0\"
+	Num[3].text = \"0\"
+
+	Num[0].disabled = false
+	Num[1].disabled = false
+	Num[2].disabled = false
+	Num[3].disabled = false
+
+	num = [0, 0, 0, 0]
+
+var temp
+var acertou = 0
+
+# checa os numeros passados pelo jogador - nem tenta entender
+func _on_Check_pressed():
+	for i in 4:
+		temp = true
+		print(Num[i].text.to_int())
+		if Num[i].text.to_int() == num_crack[i]: # acertou
+			get_node(\"HBoxContainer/Num\"+ String(i+1) +\"/AnimationPlayer\").play(\"Right\")
+			acertou += 1
+			temp = false
+			rig[i] = true
+			Num[i].disabled = true
+		for j in 4:
+			if Num[i].text.to_int() == num_crack[j] and !rig[j]: # quase
+				temp = false
+				get_node(\"HBoxContainer/Num\"+ String(i+1) +\"/AnimationPlayer\").play(\"Almost\")
+				break
+		if temp:
+			get_node(\"HBoxContainer/Num\"+ String(i+1) +\"/AnimationPlayer\").play(\"Wrong\")
+
+	if acertou == 4:
+		emit_signal(\"crack\")
+
+
+func _on_Phone_crack():
+	pass # Replace with function body.
+"
+valign = 3
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HackerAnim" type="Tween" parent="HackerText"]
+
+[node name="Bloom" type="ColorRect" parent="."]
+margin_left = 14.0
+margin_top = 42.0
+margin_right = 306.0
+margin_bottom = 410.0
+rect_pivot_offset = Vector2( 82, 205 )
+color = Color( 0, 0, 0, 0.866667 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Green" type="ColorRect" parent="Bloom"]
+margin_left = 12.0
+margin_top = 96.0
+margin_right = 29.0
+margin_bottom = 113.0
+color = Color( 0.054902, 1, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Bloom/Green"]
+margin_left = 26.0
+margin_top = -10.0
+margin_right = 230.0
+margin_bottom = 28.0
+text = "_crack-green"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Yellow" type="ColorRect" parent="Bloom"]
+margin_left = 12.0
+margin_top = 142.0
+margin_right = 29.0
+margin_bottom = 159.0
+color = Color( 1, 0.984314, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Bloom/Yellow"]
+margin_left = 26.0
+margin_top = -10.0
+margin_right = 247.0
+margin_bottom = 28.0
+text = "_crack-yellow"
+
+[node name="Red" type="ColorRect" parent="Bloom"]
+margin_left = 12.0
+margin_top = 186.0
+margin_right = 29.0
+margin_bottom = 203.0
+color = Color( 1, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Bloom/Red"]
+margin_left = 26.0
+margin_top = -10.0
+margin_right = 196.0
+margin_bottom = 28.0
+text = "_crack-red"
+
+[node name="Score" type="Label" parent="Bloom"]
+margin_left = 74.0
+margin_top = 224.0
+margin_right = 218.0
+margin_bottom = 241.0
+text = "0/3"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Crack" type="AnimationPlayer" parent="Bloom"]
+anims/Crack = SubResource( 22 )
+anims/RESET = SubResource( 23 )
+
+[node name="Cell" type="Sprite" parent="."]
+position = Vector2( 163.328, 243 )
+scale = Vector2( 1.69672, 1.65333 )
+texture = ExtResource( 2 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+self_modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 29.0
+margin_top = 314.0
+margin_right = 293.0
+margin_bottom = 370.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Num1" type="Button" parent="HBoxContainer"]
+margin_right = 63.0
+margin_bottom = 56.0
+text = " 0 "
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HBoxContainer/Num1"]
+anims/Almost = SubResource( 1 )
+anims/RESET = SubResource( 2 )
+anims/Right = SubResource( 3 )
+anims/Wrong = SubResource( 4 )
+
+[node name="Num2" type="Button" parent="HBoxContainer"]
+margin_left = 67.0
+margin_right = 130.0
+margin_bottom = 56.0
+text = " 0 "
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HBoxContainer/Num2"]
+anims/Almost = SubResource( 5 )
+anims/RESET = SubResource( 6 )
+anims/Right = SubResource( 7 )
+anims/Wrong = SubResource( 8 )
+
+[node name="Num3" type="Button" parent="HBoxContainer"]
+margin_left = 134.0
+margin_right = 197.0
+margin_bottom = 56.0
+text = " 0 "
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HBoxContainer/Num3"]
+anims/Almost = SubResource( 9 )
+anims/RESET = SubResource( 10 )
+anims/Right = SubResource( 11 )
+anims/Wrong = SubResource( 12 )
+
+[node name="Num4" type="Button" parent="HBoxContainer"]
+margin_left = 201.0
+margin_right = 264.0
+margin_bottom = 56.0
+text = " 0 "
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HBoxContainer/Num4"]
+anims/Almost = SubResource( 13 )
+anims/RESET = SubResource( 14 )
+anims/Right = SubResource( 15 )
+anims/Wrong = SubResource( 16 )
+
+[node name="Progress" type="ProgressBar" parent="."]
+margin_left = 40.0
+margin_top = 64.0
+margin_right = 276.0
+margin_bottom = 86.0
+custom_styles/fg = SubResource( 18 )
+custom_styles/bg = SubResource( 19 )
+max_value = 60.0
+step = 1.0
+value = 60.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Time" type="Timer" parent="."]
+autostart = true
+
+[node name="Check" type="Button" parent="."]
+margin_left = 53.0
+margin_top = 427.0
+margin_right = 269.0
+margin_bottom = 471.0
+text = "_crack-check"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Success" type="ColorRect" parent="."]
+visible = false
+margin_left = 16.0
+margin_top = 45.0
+margin_right = 304.0
+margin_bottom = 408.0
+color = Color( 0, 0.858824, 1, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="Success"]
+margin_left = 24.0
+margin_top = 32.0
+margin_right = 262.0
+margin_bottom = 70.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "_crack-success"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="Label" parent="Success"]
+margin_left = 47.0
+margin_top = 78.0
+margin_right = 238.0
+margin_bottom = 272.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "_crack-success-text"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Slide" type="Label" parent="Success"]
+margin_left = 41.0
+margin_top = 303.0
+margin_right = 245.0
+margin_bottom = 341.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "_crack-slide"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Trilha" type="ColorRect" parent="Success"]
+margin_left = 15.0
+margin_top = 309.0
+margin_right = 267.0
+margin_bottom = 341.0
+color = Color( 0.196078, 0.196078, 0.196078, 0.588235 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Butao" parent="Success" instance=ExtResource( 4 )]
+visible = false
+position = Vector2( -16, -45 )
+z_index = 1
+
+[node name="Area2D" type="Area2D" parent="Success"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Success/Area2D"]
+visible = false
+position = Vector2( 267.25, 324.75 )
+shape = SubResource( 21 )
+
+[connection signal="crack" from="." to="." method="_on_Phone_crack"]
+[connection signal="pressed" from="HBoxContainer/Num1" to="." method="_on_Num1_pressed"]
+[connection signal="pressed" from="HBoxContainer/Num2" to="." method="_on_Num2_pressed"]
+[connection signal="pressed" from="HBoxContainer/Num3" to="." method="_on_Num3_pressed"]
+[connection signal="pressed" from="HBoxContainer/Num4" to="." method="_on_Num4_pressed"]
+[connection signal="timeout" from="Time" to="." method="_on_Time_timeout"]
+[connection signal="pressed" from="Check" to="." method="_on_Check_pressed"]
+[connection signal="body_entered" from="Success/Area2D" to="." method="_on_Area2D_body_entered"]

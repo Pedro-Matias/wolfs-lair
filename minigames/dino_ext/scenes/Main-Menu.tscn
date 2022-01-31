@@ -1,0 +1,72 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://minigames/dino_ext/scripts/Main-Menu.gd" type="Script" id=1]
+
+[node name="Main-Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="."]
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 50.0
+margin_top = -230.0
+margin_right = 393.0
+margin_bottom = -42.0
+size_flags_vertical = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="Button" parent="Menu"]
+margin_right = 343.0
+margin_bottom = 44.0
+hint_tooltip = "_play-hint"
+focus_mode = 0
+enabled_focus_mode = 0
+text = "_play"
+
+[node name="Practice" type="Button" parent="Menu"]
+margin_top = 48.0
+margin_right = 343.0
+margin_bottom = 92.0
+hint_tooltip = "_practice-hint"
+focus_mode = 0
+enabled_focus_mode = 0
+text = "_practice"
+
+[node name="Settings" type="Button" parent="Menu"]
+margin_top = 96.0
+margin_right = 343.0
+margin_bottom = 140.0
+hint_tooltip = "_settings-hint"
+focus_mode = 0
+enabled_focus_mode = 0
+text = "_settings"
+
+[node name="Exit" type="Button" parent="Menu"]
+margin_top = 144.0
+margin_right = 343.0
+margin_bottom = 188.0
+hint_tooltip = "_exit-hint"
+focus_mode = 0
+enabled_focus_mode = 0
+text = "_exit"
+
+[node name="Settings_Position" type="Node2D" parent="."]
+position = Vector2( 0, -720 )
+
+[node name="Animation" type="Tween" parent="Settings_Position"]
+
+[node name="Button-Press" type="AudioStreamPlayer" parent="."]
+
+[connection signal="pressed" from="Menu/Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Menu/Practice" to="." method="_on_Practice_pressed"]
+[connection signal="pressed" from="Menu/Settings" to="." method="_on_Settings_pressed"]
+[connection signal="pressed" from="Menu/Exit" to="." method="_on_Exit_pressed"]
